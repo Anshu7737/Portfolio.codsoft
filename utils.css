@@ -1,0 +1,409 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-90deg, #15141a, #2e2c35);
+  position: fixed;
+  padding: 20px 10%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  position: relative;
+  color: #ffffff;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  text-decoration: none;
+  display: inline;
+  font-size: 22px;
+  font-weight: 300px;
+  margin-left: 25px;
+  transition: .3s;
+  color: white;
+}
+
+.navbar a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 690;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  padding: -3px 0;
+}
+
+.home-content h3 span {
+  color: aqua;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.home-content p {
+  font-size: 23px;
+}
+
+.socialimg a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid aqua;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  font-size: 20px;
+  color: aqua;
+  margin: 30px 15px 30px 0;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.socialimg a:hover {
+  background: aqua;
+  color: black;
+  box-shadow: 0 0 20px aqua;
+}
+
+.about {
+  background: linear-gradient(90deg, #070709, #0a090b);
+  width: 100%;
+  padding: 96px 0px;
+}
+
+.about-text {
+  color: black;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+
+.about-text h2 span {
+  color: aqua;
+}
+
+.about-text h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin-top: 33px;
+  margin-bottom: 23px;
+}
+
+.about-text p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+  margin-top: 33px;
+  margin-left: 123px;
+  margin-right: 123px;
+  border: 5px solid aqua;
+  padding: 12px;
+}
+
+.container1 {
+  background: linear-gradient(90deg, #000000, #0e0d12);
+  padding: 75px 90px;
+}
+
+.container1 h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.Myskill-subtitle span {
+  color: aqua;
+}
+
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.bar {
+  font-size: 23px;
+  margin-bottom: 34px;
+}
+
+.Technical-bars .bar .info .span {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #f6eeee;
+}
+
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: #0010f5;
+  position: absolute;
+  border-radius: 10px;
+  transform-origin: left;
+}
+
+.progress-line.html span {
+  width: 90%;
+}
+
+.progress-line.css span {
+  width: 80%;
+}
+
+.progress-line.javascript span {
+  width: 70%;
+}
+
+.progress-line.java span {
+  width: 50%;
+}
+
+.progress-line.c-plus-plus span {
+  width: 50%;
+}
+
+.project {
+  background: linear-gradient(90deg, #000000, #0e0d12);
+  padding-top: 230px;
+  padding-bottom: 230px;
+}
+
+
+.main-text h2 {
+  padding-bottom: 34px;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+}
+
+.main-text h2 span {
+  color: aqua;
+}
+
+
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 767px));
+}
+
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.row img {
+  width: 50%;
+  height: 280px;
+  border-radius: 8px;
+  position: relative;
+  left: 169px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  height: 0;
+  position: absolute;
+  border-radius: 8px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), red);
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+
+.layer p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.row:hover img {
+  transform: scale(1.1);
+}
+
+.row:hover .layer {
+  height: 100%;
+}
+
+.contact {
+  background: linear-gradient(90deg, #000000, #000000);
+  width: 100%;
+}
+
+.contact h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 33px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+#text-aqua {
+  color: aqua;
+}
+
+.contact {
+  padding: 23px 0px;
+}
+
+.contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box1 {
+  border-radius: 24px;
+  padding: 6px;
+  width: 23vw;
+  height: 50px;
+  margin-top: 15px;
+  background: transparent;
+  color: white;
+}
+
+#box2 {
+  border-radius: 24px;
+  padding: 6px;
+  width: 23vw;
+  height: 50px;
+  margin-top: 15px;
+  background: transparent;
+  color: white;
+}
+
+#box3 {
+  border-radius: 24px;
+  padding: 6px;
+  width: 23vw;
+  height: 50px;
+  margin-top: 15px;
+  background: transparent;
+  color: white;
+}
+
+#box4 {
+  border-radius: 24px;
+  padding: 6px;
+  width: 23vw;
+  height: 50px;
+  margin-top: 15px;
+  background: transparent;
+  color: white;
+}
+
+#box5 {
+  border-radius: 34px;
+  padding: 9px;
+  margin-top: 15px;
+  width: 370px;
+  background: transparent;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(-90deg, #15141a, #242329);
+}
+
+footer .copyright {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.number i {
+  color: aqua;
+  border-radius: 50%;
+}
+
+.number i:hover {
+  background: aqua;
+  color: black;
+  box-shadow: 0 0 20px aqua;
+}
+
+.scroll-up i {
+  color: aqua;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.scroll-up i:hover {
+  color: black;
+  background: aqua;
+}
